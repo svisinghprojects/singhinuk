@@ -1213,7 +1213,7 @@
 <label for="subject">Subject</label>
         <input id="subject" name="subject" type="text" placeholder="What's on your mind?" required />
         <label for="message">Message</label>
-        <textarea id="message" name="message" placeholder="Write anything, I read every message." required></textarea>
+        <textarea id="message" name="message" placeholder="Tell me about your project or idea..." required></textarea>
         <button type="submit" class="btn btn-gold" style="width:100%;justify-content:center">
           Send Message
           <svg width="14" height="14" viewBox="0 0 14 14" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M1 7h12M8 3l4 4-4 4"/></svg>
@@ -1244,7 +1244,13 @@
           </div>
         </div>
 
-
+        <div class="contact-detail">
+          <svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="8" cy="8" r="6"/><path d="M8 5v3l2 2"/></svg>
+          <div>
+            <div class="contact-detail-label">Response Time</div>
+            <div class="contact-detail-val">24–48 hours</div>
+          </div>
+        </div>
 
         <nav class="contact-socials" aria-label="Social media links">
           <a href="https://instagram.com/singhinuk_" target="_blank" rel="noopener" class="cs-link">
@@ -1472,5 +1478,9 @@
     } catch (e) { fallback(); }
   })();
 </script>
+
+<!-- Cloudflare Web Analytics -->
+<script defer src='https://static.cloudflareinsights.com/beacon.min.js' data-cf-beacon='{"token": "f271ead18ccf4b218a042fc0efaf4d44"}'></script>
+<!-- End Cloudflare Web Analytics -->
 </body>
 </html>
