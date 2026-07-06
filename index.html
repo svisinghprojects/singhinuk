@@ -3,11 +3,11 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Singh in UK — Every Place Has a Story</title>
-  <meta name="description" content="Svi Singh — A London-based Software Engineer sharing road trips, hidden gems, and real travel stories from wherever the journey takes me" />
-  <meta name="keywords" content="Singh in UK, travel creator, London, Punjab, Europe road trips, UK Indian content creator, singhinuk" />
-  <meta property="og:title" content="Singh in UK — Every Place Has a Story" />
-  <meta property="og:description" content="Software Engineer · Content Creator · Travel Storyteller. Based in London." />
+  <title>Singh in UK | Punjabi Travel Creator from London</title>
+  <meta name="description" content="Singh in UK is a Punjabi travel creator from London sharing real travel stories, hidden gems, routes, costs, and honest experiences from Europe and beyond." />
+  <meta name="keywords" content="Singh in UK, Punjabi travel creator, London travel creator, travel storyteller, UK Indian content creator, hidden gems, Europe travel, worldwide travel, singhinuk" />
+  <meta property="og:title" content="Singh in UK | Punjabi Travel Creator from London" />
+  <meta property="og:description" content="Punjabi travel storytelling from London: real journeys, hidden gems, travel costs, routes, flights, road trips, and honest experiences from Europe and beyond." />
   <meta property="og:url" content="https://singhinuk.com" />
   <meta property="og:image" content="https://singhinuk.com/preview.jpg" />
   <meta property="og:image:alt" content="Singh in UK — Punjabi travel storyteller from London" />
@@ -834,7 +834,59 @@
       .hero-h1 em { animation: none; }
       .hero-bg::before { animation: none; }
     }
-  </style>
+  
+
+    /* ─── Modern polish updates ──────────────────────────────── */
+    a:focus-visible, button:focus-visible, input:focus-visible, textarea:focus-visible, select:focus-visible {
+      outline: 2px solid var(--accent);
+      outline-offset: 4px;
+    }
+    .hero-tagline { max-width: 64ch; line-height: 1.6; }
+    .social-thumb {
+      display: flex;
+      align-items: flex-end;
+      padding: .55rem;
+      position: relative;
+      overflow: hidden;
+    }
+    .social-thumb::after {
+      content: '';
+      position: absolute;
+      inset: 0;
+      background: linear-gradient(to top, rgba(27,37,40,.22), transparent 58%);
+      pointer-events: none;
+    }
+    .social-thumb span {
+      position: relative;
+      z-index: 1;
+      font-size: .58rem;
+      letter-spacing: .14em;
+      text-transform: uppercase;
+      color: rgba(27,37,40,.72);
+    }
+    .feature-grid > div,
+    .journey-layout,
+    .contact-grid,
+    .social-grid,
+    .ig-grid {
+      min-width: 0;
+    }
+    @media (max-width: 900px) {
+      .journey-layout { grid-template-columns: 1fr !important; gap: 3rem !important; }
+    }
+    @media (max-width: 600px) {
+      .hero-h1 { font-size: clamp(3rem, 18vw, 5rem); }
+      .hero-content { padding-top: 110px; }
+      .hero-actions .btn { width: 100%; justify-content: center; }
+      .hero-roles { gap: .6rem; }
+      .role-tag { font-size: .6rem; padding: .32rem .7rem; }
+      .marquee-wrap { display: none; }
+      .feature-grid { grid-template-columns: 1fr !important; }
+      .social-card { padding: 1.6rem; }
+      .footer-bottom { align-items: flex-start; }
+    }
+    .hero-h1 em { animation: none; }
+</style>
 </head>
 <body>
 
@@ -864,18 +916,18 @@
   <div class="hero-glow" id="heroGlow" aria-hidden="true"></div>
 
   <div class="hero-content">
-    <p class="hero-tag">Singh in UK · singhinuk.com</p>
+    <p class="hero-tag">Punjabi Travel Creator · London</p>
 
     <h1 class="hero-h1">
-      <span class="line"><span>The Road</span></span>
+      <span class="line"><span>The World</span></span>
       <span class="line"><span>Taught</span></span>
       <span class="line"><span><em style="font-style:italic;font-family:'Cormorant Garamond',serif">Me More</em></span></span>
     </h1>
 
-    <p class="hero-tagline" style="font-size:.72rem;letter-spacing:.16em;text-transform:uppercase;color:var(--fg-muted);margin-top:1.5rem;opacity:0;animation:fade-up .6s 1.15s var(--ease) forwards;">Travel Storyteller &bull; Software Engineer &bull; Based in London</p>
+    <p class="hero-tagline" style="font-size:.72rem;letter-spacing:.16em;text-transform:uppercase;color:var(--fg-muted);margin-top:1.5rem;opacity:0;animation:fade-up .6s 1.15s var(--ease) forwards;">Punjabi travel storyteller from London, sharing real journeys across Europe and beyond.</p>
 
     <p class="hero-sub" style="margin-top:1.25rem;">
-      I started travelling because I wanted to see new places. Along the way, I realised the destination was never the best part. It was the people I met, the lessons I learned, and the memories I brought home.
+      From London to the world, I share real journeys, hidden gems, routes, travel costs, flights, road trips, and the small moments that make every place worth remembering.
     </p>
 
     <div class="hero-actions">
@@ -890,7 +942,7 @@
   <div class="hero-meta">
     <div class="hero-roles">
       <span class="role-tag">Software Engineer</span>
-      <span class="role-tag">Content Creator</span>
+      <span class="role-tag">Punjabi Creator</span>
       <span class="role-tag">Travel Storyteller</span>
     </div>
     <span class="location-badge">London, United Kingdom</span>
@@ -898,14 +950,14 @@
 
   <div class="marquee-wrap" aria-hidden="true">
     <div class="marquee-track">
-      <span class="marquee-item">Road Trips</span>
-      <span class="marquee-item">European Travel</span>
+      <span class="marquee-item">Travel Stories</span>
+      <span class="marquee-item">Europe & Beyond</span>
       <span class="marquee-item">UK Life</span>
       <span class="marquee-item">Punjab to London</span>
       <span class="marquee-item">Travel Stories</span>
       <span class="marquee-item">Authentic Journeys</span>
-      <span class="marquee-item">Road Trips</span>
-      <span class="marquee-item">European Travel</span>
+      <span class="marquee-item">Travel Stories</span>
+      <span class="marquee-item">Europe & Beyond</span>
       <span class="marquee-item">UK Life</span>
       <span class="marquee-item">Punjab to London</span>
       <span class="marquee-item">Travel Stories</span>
@@ -920,26 +972,26 @@
 <section class="section" style="background:var(--bg);">
   <div class="section-inner">
     <div class="label reveal">What You'll Find Here</div>
-    <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));border:1px solid var(--border);border-radius:6px;overflow:hidden;margin-top:2.5rem;">
+    <div class="feature-grid" style="display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));border:1px solid var(--border);border-radius:6px;overflow:hidden;margin-top:2.5rem;">
       <div class="reveal" style="background:var(--surface);padding:2rem;border-right:1px solid var(--border);border-bottom:1px solid var(--border);">
         <div style="font-size:.65rem;letter-spacing:.2em;text-transform:uppercase;color:var(--accent);margin-bottom:.75rem;">01</div>
-        <div style="font-family:'Cormorant Garamond',serif;font-size:1.15rem;font-weight:400;margin-bottom:.5rem;">Road Trips &amp; Hidden Gems</div>
-        <p style="font-size:.82rem;color:var(--fg-muted);line-height:1.65;">Real routes, real places, and the spots most people drive past.</p>
+        <div style="font-family:'Cormorant Garamond',serif;font-size:1.15rem;font-weight:400;margin-bottom:.5rem;">Travel Stories &amp; Hidden Gems</div>
+        <p style="font-size:.82rem;color:var(--fg-muted);line-height:1.65;">Places across Europe and beyond, from famous cities to quiet viewpoints, waterfalls, mountain towns, and hidden corners most travellers miss.</p>
       </div>
       <div class="reveal" style="background:var(--surface);padding:2rem;border-right:1px solid var(--border);border-bottom:1px solid var(--border);transition-delay:.05s">
         <div style="font-size:.65rem;letter-spacing:.2em;text-transform:uppercase;color:var(--accent);margin-bottom:.75rem;">02</div>
         <div style="font-family:'Cormorant Garamond',serif;font-size:1.15rem;font-weight:400;margin-bottom:.5rem;">Practical Travel Tips</div>
-        <p style="font-size:.82rem;color:var(--fg-muted);line-height:1.65;">Routes, costs, and honest advice from someone who has actually been there.</p>
+        <p style="font-size:.82rem;color:var(--fg-muted);line-height:1.65;">Flights, ferries, road routes, parking, tolls, city travel, costs, and honest lessons learned from each trip.</p>
       </div>
       <div class="reveal" style="background:var(--surface);padding:2rem;border-bottom:1px solid var(--border);transition-delay:.1s">
         <div style="font-size:.65rem;letter-spacing:.2em;text-transform:uppercase;color:var(--accent);margin-bottom:.75rem;">03</div>
         <div style="font-family:'Cormorant Garamond',serif;font-size:1.15rem;font-weight:400;margin-bottom:.5rem;">Honest Travel Stories</div>
-        <p style="font-size:.82rem;color:var(--fg-muted);line-height:1.65;">No clickbait, no fake luxury. Just what it was really like.</p>
+        <p style="font-size:.82rem;color:var(--fg-muted);line-height:1.65;">No fake luxury, no forced hype. Just how the journey actually felt, what worked, and what I would do differently.</p>
       </div>
       <div class="reveal" style="background:var(--surface);padding:2rem;transition-delay:.15s">
         <div style="font-size:.65rem;letter-spacing:.2em;text-transform:uppercase;color:var(--accent);margin-bottom:.75rem;">04</div>
         <div style="font-family:'Cormorant Garamond',serif;font-size:1.15rem;font-weight:400;margin-bottom:.5rem;">Travel Through Punjabi Eyes</div>
-        <p style="font-size:.82rem;color:var(--fg-muted);line-height:1.65;">Stories told in Punjabi, for the community that loves to explore.</p>
+        <p style="font-size:.82rem;color:var(--fg-muted);line-height:1.65;">Punjabi and English stories for people who love travel, family journeys, and seeing the world through a familiar lens.</p>
       </div>
     </div>
   </div>
@@ -957,26 +1009,26 @@
         <h2 class="display reveal">
           Born in Punjab.<br>
           Built in <em>London.</em><br>
-          Inspired by the Road.
+          Inspired by the Journey.
         </h2>
         <div class="about-quote reveal">
           "For me, travel has never been about collecting countries. It's about collecting moments, meeting people, and coming home with stories worth telling."
         </div>
         <p class="reveal" style="transition-delay:.08s">
-          Hi, I'm <strong>Svi Singh</strong>. I work as a Software Engineer in London, but whenever I get the chance, I'm on the road exploring new places.
+          Hi, I'm <strong>Svi Singh</strong>. I work as a Software Engineer in London, but whenever I get the chance, I'm exploring new places — sometimes by car, sometimes by flight, and always with a story to bring home.
         </p>
         <p class="reveal" style="transition-delay:.12s">
-          Originally from Punjab, I make travel videos in Punjabi for people who love seeing the world without all the hype. I share the places I visit, the routes I take, hidden gems I come across, and the little moments that make every journey memorable.
+          Originally from Punjab, I make Punjabi and English travel videos for people who want to explore without the fake luxury or over-hype. I share the places I visit, how I get there, the costs, the useful tips, and the hidden gems I find along the way.
         </p>
         <p class="reveal" style="transition-delay:.16s">
-          Whether it's a road trip across Europe or somewhere else in the world, I just want to show travel as it really is. No clickbait. No fake luxury. Just real journeys, honest experiences, and stories worth sharing.
+          Whether I travel by flight, ferry, train, or car, I want Singh in UK to feel useful and personal: real journeys, honest experiences, and stories worth sharing.
         </p>
         <div class="about-tags reveal" style="transition-delay:.16s">
           <span class="tag">Punjab Roots</span>
           <span class="tag">London Life</span>
           <span class="tag">Software Engineer</span>
-          <span class="tag">Road Trips</span>
-          <span class="tag">Road Trip Enthusiast</span>
+          <span class="tag">Travel Stories</span>
+          <span class="tag">Europe & Beyond</span>
           <span class="tag">Travel Storyteller</span>
         </div>
       </div>
@@ -993,7 +1045,7 @@
     <div style="display:flex;align-items:flex-end;justify-content:space-between;flex-wrap:wrap;gap:1rem">
       <h2 class="display reveal">Find Me <em style="color:var(--accent);font-style:italic;font-family:'Cormorant Garamond',serif">Online</em></h2>
       <p class="reveal" style="max-width:36ch;color:var(--fg-2);font-size:.9rem;line-height:1.7;padding-bottom:.5rem">
-        Follow along on all platforms for travel stories, road trips, and real life from London.
+        Follow along for Punjabi travel stories, practical tips, hidden gems, and real life from London to Europe and beyond.
       </p>
     </div>
 
@@ -1023,9 +1075,9 @@
         <div>
         </div>
         <div class="social-previews">
-          <div class="social-thumb g1"></div>
-          <div class="social-thumb g2"></div>
-          <div class="social-thumb g3"></div>
+          <div class="social-thumb g1"><span>Alps</span></div>
+          <div class="social-thumb g2"><span>Falls</span></div>
+          <div class="social-thumb g3"><span>Routes</span></div>
         </div>
         <a href="https://instagram.com/singhinuk_" target="_blank" rel="noopener" class="social-btn">
           Follow on Instagram
@@ -1047,9 +1099,9 @@
         <div>
         </div>
         <div class="social-previews">
-          <div class="social-thumb g4"></div>
-          <div class="social-thumb g5"></div>
-          <div class="social-thumb g6"></div>
+          <div class="social-thumb g4"><span>Trips</span></div>
+          <div class="social-thumb g5"><span>UK</span></div>
+          <div class="social-thumb g6"><span>Tips</span></div>
         </div>
         <a href="https://www.tiktok.com/@singhinuk" target="_blank" rel="noopener" class="social-btn">
           Follow on TikTok
@@ -1071,9 +1123,9 @@
         <div>
         </div>
         <div class="social-previews">
-          <div class="social-thumb g2"></div>
-          <div class="social-thumb g1"></div>
-          <div class="social-thumb g4"></div>
+          <div class="social-thumb g2"><span>Reels</span></div>
+          <div class="social-thumb g1"><span>Stories</span></div>
+          <div class="social-thumb g4"><span>Guides</span></div>
         </div>
         <a href="https://www.youtube.com/@SinghinUKOfficial" target="_blank" rel="noopener" class="social-btn">
           Subscribe on YouTube
@@ -1095,9 +1147,9 @@
         <div>
         </div>
         <div class="social-previews">
-          <div class="social-thumb g5"></div>
-          <div class="social-thumb g3"></div>
-          <div class="social-thumb g6"></div>
+          <div class="social-thumb g5"><span>Family</span></div>
+          <div class="social-thumb g3"><span>Beyond</span></div>
+          <div class="social-thumb g6"><span>London</span></div>
         </div>
         <a href="https://www.facebook.com/SinghinUK/" target="_blank" rel="noopener" class="social-btn">
           Follow on Facebook
@@ -1187,13 +1239,13 @@
 <!-- ─── JOURNEY TIMELINE ──────────────────────────────────────── -->
 <section id="journey" class="section">
   <div class="section-inner">
-    <div style="display:grid;grid-template-columns:1fr 1.5fr;gap:5rem;align-items:start">
+    <div class="journey-layout" style="display:grid;grid-template-columns:1fr 1.5fr;gap:5rem;align-items:start">
       <div>
         <div class="label reveal">My Story</div>
         <h2 class="display reveal">The Journey<br>So <em style="color:var(--accent);font-style:italic;font-family:'Cormorant Garamond',serif">Far</em></h2>
         <p class="reveal" style="color:var(--fg-2);font-size:.9rem;line-height:1.8;margin-top:1.5rem;transition-delay:.06s">
-          Life has taken me from Punjab to London, and from there to places I once only saw in pictures.
-          Every journey reminds me that there's always something new to discover and always another story waiting to be told.
+          Life has taken me from Punjab to London, and from London to places across Europe and beyond.
+          Singh in UK is where I share the real side of those journeys: how I travelled, what it cost, how it felt, and the story behind the place.
         </p>
       </div>
       <div class="timeline" id="timeline">
@@ -1226,8 +1278,8 @@
         <div class="t-item reveal" style="transition-delay:.32s">
           <div class="t-dot"></div>
           <div class="t-year">Exploration</div>
-          <div class="t-title">Roads I've Traveled</div>
-          <p class="t-desc">From the Alps to the Mediterranean, every journey has added a new story, a new lesson, and a different way of seeing the world.</p>
+          <div class="t-title">Places I've Explored</div>
+          <p class="t-desc">From the Alps to the Mediterranean, from city breaks to mountain towns and places outside Europe, every journey added a story, a lesson, and a better way to guide others.</p>
         </div>
         <div class="t-item reveal" style="transition-delay:.4s">
           <div class="t-dot"></div>
@@ -1264,11 +1316,11 @@
           </div>
         </div>
 <label for="subject">Subject</label>
-        <input id="subject" name="subject" type="text" placeholder="What's on your mind?" required />
+        <input id="subject" name="subject" type="text" placeholder="Say hello or share an idea" required />
         <label for="message">Message</label>
-        <textarea id="message" name="message" placeholder="Tell me about your project or idea..." required></textarea>
+        <textarea id="message" name="message" placeholder="Hi Svi, I’d love to connect about..." required></textarea>
         <button type="submit" class="btn btn-gold" style="width:100%;justify-content:center">
-          Send Message
+          Send My Message
           <svg width="14" height="14" viewBox="0 0 14 14" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M1 7h12M8 3l4 4-4 4"/></svg>
         </button>
       </form>
@@ -1276,7 +1328,7 @@
       <div class="contact-info reveal reveal-r" style="transition-delay:.1s">
         <h3>Based in London,<br><em style="color:var(--accent);font-style:italic;font-family:'Cormorant Garamond',serif">United Kingdom</em></h3>
         <p style="color:var(--fg-2);font-size:.88rem;line-height:1.8;margin-bottom:2rem">
-          If you have an idea, a project, or simply want to say hello, I'd love to hear from you.
+          Whether you want to say hello, ask a travel question, or explore a brand idea, feel free to drop me a message. I read every enquiry and reply as soon as I can.
         </p>
 
         <div class="contact-detail">
@@ -1402,19 +1454,7 @@
     });
   }
 
-  /* ── Subtle tilt on hover cards ─────────────────────────────── */
-  if (!prefersReducedMotion) {
-    document.querySelectorAll('.social-card, .content-card, .t-card').forEach(card => {
-      card.style.transformStyle = 'preserve-3d';
-      card.addEventListener('mousemove', e => {
-        const r = card.getBoundingClientRect();
-        const px = (e.clientX - r.left) / r.width - 0.5;
-        const py = (e.clientY - r.top) / r.height - 0.5;
-        card.style.transform = `translateY(-5px) rotateX(${(-py * 6).toFixed(2)}deg) rotateY(${(px * 6).toFixed(2)}deg)`;
-      });
-      card.addEventListener('mouseleave', () => { card.style.transform = ''; });
-    });
-  }
+  /* Hover movement is handled in CSS only for a cleaner, lighter feel. */
 
   /* ── Scroll progress ───────────────────────────────────────── */
   const prog = document.getElementById('progress');
@@ -1506,7 +1546,6 @@
     const data = new FormData(form);
     const name = (data.get('name') || '').toString().trim();
     const email = (data.get('email') || '').toString().trim();
-    const company = (data.get('company') || '').toString().trim();
     const subject = (data.get('subject') || 'Collaboration enquiry').toString().trim();
     const message = (data.get('message') || '').toString().trim();
     const recipient = form.dataset.recipient || 'iamsinghinuk@gmail.com';
@@ -1514,7 +1553,6 @@
     const body = [
       `Name: ${name}`,
       `Email: ${email}`,
-      company ? `Company / Brand: ${company}` : '',
       '',
       message
     ].filter(Boolean).join('\n');
@@ -1522,9 +1560,10 @@
     window.location.href = `mailto:${recipient}?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
 
     const btn = form.querySelector('[type=submit]');
-    btn.textContent = 'Opening Email App…';
+    const original = btn.innerHTML;
+    btn.innerHTML = 'Opening Email App…';
     btn.style.background = 'var(--accent-dk)';
-    setTimeout(() => { btn.textContent = 'Send Message'; btn.style.background = ''; }, 2500);
+    setTimeout(() => { btn.innerHTML = original; btn.style.background = ''; }, 2500);
   });
 
   /* ── Live Instagram feed (Behold JSON) ─────────────────────── */
